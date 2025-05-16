@@ -1,0 +1,349 @@
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header */
+    header {
+      background-color: darkcyan;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    /* Navigation bar */
+    nav {
+      background-color: steelblue;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
+
+    .head{
+      color: red;
+      text-align: center ;
+    }
+
+    nav a, .dropdown button {
+      float: left;
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 16px;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    nav a:hover, .dropdown:hover button {
+      background-color: lightgreen;
+    }
+
+    /* Dropdown container */
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    /* Dropdown content */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: whitesmoke;
+      min-width: 200px;
+      z-index: 1;
+      box-shadow: 0px 8px 16px rgba(219, 7, 7, 0.2);
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: lightslategray;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: whitesmoke;
+    }
+
+    /* Show dropdown on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+
+<body>
+
+
+  <nav>
+    <a href="#">Home</a>
+    <div class="dropdown">
+      <button>About</button>
+      <div class="dropdown-content">
+        <a href="#">Oxymed History</a>
+        <a href="#">Oxymed Research</a>
+        <a href="#">Oxymed Foundation</a>
+      </div>
+    </div>
+  </nav>
+
+
+  table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+td {
+    color:blue;
+  vertical-align: top;
+  padding: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.medical-section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center;
+    }
+
+    .medical-section h2 {
+      font-size: 28px;
+      color: rgb(15, 188, 240);
+      margin-bottom: 20px;
+    }
+
+    .medical-section p {
+      font-size: 16px;
+      color: blue;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .appointment-btn {
+      display: inline-block;
+      background-color: red;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .appointment-btn:hover {
+      background-color: red;
+    }
+ 
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: whitesmoke;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: steelblue;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: black);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid grey;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      width: 100%;
+      background-color: skyblue;
+      color: rgb(231, 14, 14);
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: darkcyan;
+    }
+      body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+    }
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+.text-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.text-section h2 {
+  width: 100%;
+  font-size: 28px;
+  color: darkcyan;
+  margin-bottom: 10px;
+}
+
+.image-section {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.service-block {
+  flex: 2;
+  min-width: 300px;
+}
+
+.service-block p {
+  font-size: 16px;
+  color: blue;
+  line-height: 1.6;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+.site-footer {
+  background-color: darkcyan;
+  padding: 40px 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: grey;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  color: darkblue;
+  margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column a {
+  font-size: 14px;
+  line-height: 1.6;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: none;
+}
+
+.footer-column form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column input[type="email"] {
+  padding: 8px;
+  border: 1px solid gainsboro;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.footer-column button {
+  padding: 8px;
+  background-color: seagreen;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-column button:hover {
+  background-color: darkblue;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 13px;
+  color: grey;
+}
+
+    
+
+.footer-marquee {
+  color: red;              
+  font-size: 16px;
+  padding: 10px 0;
+}
+</style>
